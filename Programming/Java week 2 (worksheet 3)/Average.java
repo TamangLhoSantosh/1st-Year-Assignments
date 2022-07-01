@@ -10,10 +10,11 @@ class Average{
     }
     // declaring main method
     public static void main(String[] args) {
-        // initilizaing object
+        // Reading form console.
         Scanner read = new Scanner(System.in);
         // print the desired result
         System.out.println("Enter three numbers : ");
+        // values entered are read. 
         double a = read.nextDouble();
         double b = read.nextDouble();
         double c = read.nextDouble();

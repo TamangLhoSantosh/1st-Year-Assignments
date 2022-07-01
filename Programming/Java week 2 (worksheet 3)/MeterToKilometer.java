@@ -6,9 +6,9 @@ class MeterToKilometers{
     public static final double CONSTANT = 1000000;
     // Method conversion is defined.
     public void conversion(){
-        // Object is initilized.
+        // Reading form console.
         Scanner read = new Scanner(System.in);
-        System.out.println("Enter the distance in square kilometer : ");
+        System.out.println("Enter the distance in square meter : ");
         // Value entered from console is read.
         double a = read.nextDouble();
         read.close();
