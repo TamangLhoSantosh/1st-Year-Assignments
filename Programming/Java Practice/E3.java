@@ -12,6 +12,7 @@ class E3{
     }
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
+        System.out.println("Enter any number : ");
         double a = read.nextDouble();
         read.close();
 
