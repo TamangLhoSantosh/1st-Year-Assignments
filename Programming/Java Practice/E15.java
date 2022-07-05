@@ -1,4 +1,7 @@
+//class is declared as E15
 class E15{
+
+//main method is declared
     public static void main(String[] args) {
         String letter = "*    *\n*    *\n******\n*    *\n*    *";
         System.out.println(letter);
