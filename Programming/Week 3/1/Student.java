@@ -53,6 +53,7 @@ class Student{
         String level = s.nextLine();
         System.out.println("Enter student id : ");
         int id = s.nextInt();
+        s.close();
         Student stf = new Student(name, id, level);
         System.out.println(stf.getName() + " studying in " + stf.getLevel() + " with id no. " + stf.getID() + " got the average marks of " + stf.marks());
     }
