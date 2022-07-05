@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class E22{
+public class E22{
     public void compound(int a, int b){
         System.out.println("Initial Balance: " + a);
         System.out.println("Annual interest rate in percentage : " + b);
