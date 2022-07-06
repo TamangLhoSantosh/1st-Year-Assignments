@@ -1,3 +1,6 @@
+//importing Scanner class
+import java.util.Scanner;
+
 /*
  * A class for car objects, demonstrating the use of methods as behaviours
  * and variables as properties.
@@ -15,14 +18,17 @@ public class Car
     double amountOfGas;  // the amount of gas
 
     /*
-     * Constructor of a car object. This constructor takes 2
-     * parameters, mod and col, to set the model and the colour 
+     * Constructor of a car object. This constructor takes 3
+     * parameters, mod, col, num and amount to set the model, the colour,
+     * the number of the passenger and the amount of gas
      * of the particular car object.
      */
-    public Car(String mod, String col)
+    public Car(String mod, String col, int num, double amount)
     {
         model = mod;
         colour = col;
+        numOfPassengers = num;
+        amountOfGas = amount;
     }
     
     public Car(String mod) {
@@ -99,10 +105,25 @@ public class Car
     
     public static void main(String[] args) 
     {
+
+        //creating a object in scanner class
+        Scanner read = new Scanner(System.in);
+        System.out.println("Enter the model of the car : ");
+        String mod = read.nextLine();
+        System.out.println("Enter the color of the car : ");
+        String col = read.nextLine();
+        System.out.println("Enter the number of passenger in the car : ");
+        int num = read.nextInt();
+        System.out.println("Enter the amount of gas in the car : ");
+        double amount = read.nextDouble();
+        read.close();
+
+
+
         /*
          * Create a new Car object and initialise it
          */
-        Car myCar = new Car("Mustang");
+        Car myCar = new Car(mod, col, num, amount);
         myCar.initialise();
         System.out.println("My car is a " + myCar.getModel() 
                             + " and it is " + myCar.getColour() + ".");
@@ -143,5 +164,3 @@ public class Car
                             + " passengers right now.");                    
     }
 }
-
-
