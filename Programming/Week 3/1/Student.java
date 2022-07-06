@@ -25,8 +25,10 @@ class Student{
         this.initialise();
     }
 
-
+    //declaring method
     public void initialise(){
+
+        //assigning value to object in scanner
         s = new Scanner(System.in);
     }
 
@@ -54,15 +56,17 @@ class Student{
     //method marks is declared
     public double marks(){
 
-        //creating new object in scanner
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter the marks of five subjects : ");
-        double m1 = scan.nextDouble();
-        double m2 = scan.nextDouble();
-        double m3 = scan.nextDouble();
-        double m4 = scan.nextDouble();
-        double m5 = scan.nextDouble();
-        scan.close();
+        System.out.println("Enter the marks of math subject : ");
+        double m1 = s.nextDouble();
+        System.out.println("Enter the marks of science subjects : ");
+        double m2 = s.nextDouble();
+        System.out.println("Enter the marks of social subjects : ");
+        double m3 = s.nextDouble();
+        System.out.println("Enter the marks of english subjects : ");
+        double m4 = s.nextDouble();
+        System.out.println("Enter the marks of nepali subjects : ");
+        double m5 = s.nextDouble();
+        s.close();
 
         //mathematical calculation
         double avg = (m1 + m2 + m3 + m4 + m5) / 5;
@@ -74,7 +78,6 @@ class Student{
     //main method is declared
     public static void main(String[] args) {
 
-        //creating object in scanner
         Scanner s = new Scanner(System.in);
         System.out.println("Enter student name : ");
         String name = s.nextLine();
