@@ -1,7 +1,9 @@
 //importing Scanner class
 import java.util.Scanner;
 
-//declaring class as Student
+/* 
+ * declaring class as Student
+*/
 class Student{
 
 
