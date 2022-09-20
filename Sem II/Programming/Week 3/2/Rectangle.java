@@ -76,7 +76,7 @@ public class Rectangle
         /*
          * The following do-while block loops the program while user enters yes and stop the program when user enters no
          */
-        do {
+        while (cont.equals("yes")){ // checks the value of cont and decides whether to continue the loop or not
             /*
              * The next 4 lines reads the data from console that user entered
              */
@@ -125,7 +125,6 @@ public class Rectangle
             cont = keyboard.next(); // data is read from the console and assigned to cont variable
             System.out.println(""); // prints a space
         }
-        while (cont.equals("yes")); // checks the value of cont and decides whether to continue the loop or not
         
         System.out.println("Goodbye!"); // prints goodbye
     }

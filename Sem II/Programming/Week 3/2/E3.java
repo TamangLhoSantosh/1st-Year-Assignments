@@ -6,31 +6,47 @@ class E3{
 
     //declaring switchmethod num
     public void switchMethod(int num){
+
+        //switch is started
         switch(num){
+
+            //case 1 is defined
             case 1 : System.out.println(" ");
                      System.out.println("The day is Monday.");
                      System.out.println(" ");
                 break;
+                
+            //case 2 is defined
             case 2 : System.out.println(" ");
                      System.out.println("The day is Tuesday.");
                      System.out.println(" ");
                 break;
+
+            //case 3 is defined
             case 3 : System.out.println(" ");
                      System.out.println("The day is Wednesday.");
                      System.out.println(" ");
                 break;
+
+            //case 4 is defined
             case 4 : System.out.println(" ");
                      System.out.println("The day is Thursday.");
                      System.out.println(" ");
                 break;
+
+            //case 5 is defined
             case 5 : System.out.println(" ");
                      System.out.println("The day is Friday.");
                      System.out.println(" ");
                 break;
+
+            //case 6 is defined
             case 6 : System.out.println(" ");
                      System.out.println("The day is Saturday.");
                      System.out.println(" ");
                 break;
+
+            //case 7 is defined
             case 7 : System.out.println(" ");
                      System.out.println("The day is Sunday.");
                      System.out.println(" ");
@@ -49,7 +65,6 @@ class E3{
         Scanner read = new Scanner(System.in);
 
         //creating loop
-
         do{
             
             //reading data from console

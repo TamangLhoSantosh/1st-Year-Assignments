@@ -1,5 +1,6 @@
-//importing Scanner class
-import java.util.Scanner;
+//importing joptionpane
+import javax.swing.JOptionPane;
+
 
 /*
  * A class for car objects, demonstrating the use of methods as behaviours
@@ -106,7 +107,7 @@ public class Car
     public static void main(String[] args) 
     {
 
-        //creating a object in scanner class
+        /*creating a object in scanner class
         Scanner read = new Scanner(System.in);
         System.out.println("Enter the model of the car : ");
         String mod = read.nextLine();
@@ -117,8 +118,15 @@ public class Car
         System.out.println("Enter the amount of gas in the car : ");
         double amount = read.nextDouble();
         read.close();
+        */
 
-
+        //writing the value in window
+        String mod = JOptionPane.showInputDialog("Enter the model of the car :");
+        String col = JOptionPane.showInputDialog("Enter the color of the car :");
+        String a = JOptionPane.showInputDialog("Enter the number of passenger in the car :");
+        int num = Integer.parseInt(a);
+        String b = JOptionPane.showInputDialog("Enter the amount of gas in the car :");
+        double amount = Double.parseDouble(b);
 
         /*
          * Create a new Car object and initialise it
