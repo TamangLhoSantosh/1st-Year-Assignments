@@ -246,3 +246,126 @@
 #     if i == 0 :
 #         i += 1
 
+# print 0 to 6 except 3 and 6
+# for i in range(6) :
+#     if i % 3 != 0 :
+#         print(i)
+
+# fizzbuzz
+# for i in range(50) :
+#     if i % 3 == 0 and i % 5 == 0 :
+#         print("FizzBuzz")
+#     elif i % 3 == 0 :
+#         print("Fizz")
+#     elif i % 5 == 0 :
+#         print("Buzz")
+#     else :
+#         print(i)
+
+# multiple table
+# num = int(input("Enter any number : "))
+# for i in range(1,11):
+#     ans = num * i
+#     print(num, "*", i, "=", ans)
+
+# nested loop
+# for i in range(1, 10):
+#     for j in range (i):
+#         print(i,end = " ")
+#     print()
+
+# sum and average
+# num = int(input("Enter any number : "))
+# sum = 0
+# for i in range (1, num) :
+#     sum = sum + num
+# avg = sum // num
+# print(sum)
+# print(avg)
+
+# character a
+# for i in range(1, 7) :
+#     if i == 1 :
+#         print(" *** ")
+#     elif i == 4 :
+#         print("*****")
+#     else :
+#         print("*   *")
+
+# character E
+# for i in range(1,8) :
+#     if i == 1 or i == 4 or i == 7 :
+#         print("*****")
+#     else :
+#         print("*")
+
+# character l
+# for i in range( 1, 7) :
+#     if i == 6 :
+#         print("*****")
+#     else :
+#         print("*")
+
+# 100 to 400 only even digits
+# for i in range(100, 401) :
+#     j = i % 10
+#     k = (i // 10) % 10
+#     l = (i // 100) % 100
+#     if j % 2 == 0 and k % 2 == 0 and l % 2 == 0 :
+#         print(i,end=",")
+
+# sum of square of first n numbers
+# num = int(input("Enter any num : "))
+# sum = 0
+# for i in range(num + 1) :
+#     sum = sum + i ** 2
+# print("The sum of square is ", sum)
+
+# showing fibonacci series till nth number
+# g = int(input("Enter the n th number for the fibonacci serires : "))
+# h = 0
+# i = 0
+# j = 0
+# k = 0
+# while h < g :
+#     print(i)
+#     k = i + j
+#     j = i 
+#     i = k
+#     if i == 0 :
+#         i += 1
+#     h += 1
+
+# counting even or odd in series of number
+# num = int(input("Enter any number : "))
+# even = 0
+# odd = 0
+# while num > 0 :
+#     co = num % 10
+#     if co % 2 == 0 :
+#         even += 1
+#     else :
+#         odd += 1
+#     num = num // 10
+# print("Enter the number of even in the number is ", even)
+# print("The number of odd in the number is ", odd)
+
+# factorial of number
+# num = int(input("Enter any number : "))
+# factorial = 1
+# for i in range(2, num + 1) :
+#     factorial = factorial * i
+# print("The factorial of the number is ", factorial)
+
+# prime or not
+# ans = "true"
+# print("The prime numbers are : ")
+# for i in range(2, 11) :
+#     for j in range(2,i) :
+#         if i % j == 0 :
+#             print(i, "Not prime")
+#             ans = "false"
+#             break
+#         ans = "true"
+#     if ans == "true":
+#         print(i, "prime")
