@@ -369,3 +369,204 @@
 #         ans = "true"
 #     if ans == "true":
 #         print(i, "prime")
+
+# Pallindrome for num
+# num = int(input("Enter any number : "))
+# number = num
+# rev = 0
+# while num > 0 :
+#     rem = num % 10
+#     rev = rev * 10 + rem
+#     num //= 10
+# if rev == number :
+#     print("The number is a pallindrome number.")
+# else :
+#     print("The number is not a pallindrome number.")
+
+# A = "NEPAL"
+# for i in range(len(A)) :
+#     print(A[0:i + 1:])
+# for i in range(len(A)) :
+#     for j in range( i + 1):
+#         print(A[j], end= " ")
+#     print()
+
+# # Array
+
+# printing all array element
+# from array import array
+
+# array_s = array('i', [1, 2, 3, 4, 5])
+# for elem in array_s :
+#     print(elem)
+
+# printing sum of the number in the array
+# from array import array
+
+# sum = 0
+# array_s = array('i', [1, 2, 3, 4, 5])
+# for elem in array_s :
+#     sum += elem    
+# print(sum)
+
+# printing largest number in the array
+# from array import array
+
+# max = 0
+# array_s = array('f', [1.34, 2.54, 3.65, 4.76, 5.76])
+# for elem in array_s :
+#     if elem > max :
+#         max = elem
+# print(max)
+
+# printing smallest nunber in the array
+# from array import array
+
+# array_s = array('i', [1, 2, 3, 4, 5])
+# mini = array_s[0]
+# for elem in array_s :
+#     if elem < mini :
+#         mini = elem
+# print(mini)
+
+#printing the characters in ascending order
+# from array import array
+
+# array_s = array('b', b'santosh')
+# print(sorted(array_s))
+
+# creating unique list
+# lists = [1, 2, 3, 4, 1, 5]
+# new_list = []
+# for elem in lists :
+#     if elem not in new_list :
+#         new_list.append(elem)
+# print(new_list)
+
+# from copy import deepcopy
+
+
+# lists = [1, 2, 3, 4, 1, 5]
+# new_list = deepcopy(lists)
+# for i in range(len(lists)) :
+#     if lists[i] in lists[:i] :
+#         new_list.pop(i)
+# print(new_list)
+
+# from copy import deepcopy
+
+# i = 0
+# lists = [1, 2, 3, 4, 1, 5]
+# new_list = deepcopy(lists)
+# for idx in range(len(lists)) :
+#     count = lists.count(lists[idx])
+#     if count > 1 and idx > 0:
+#         for i in range(len(lists[:idx])) :
+#             if lists[i] == list[idx]:
+#                 new_list.pop(i)
+# print(new_list)
+
+# i = 0
+# while i < 5 :
+#     print(i)
+#     i += 1
+#     if i == 3 :
+#         pass
+# else :
+#     print(0)
+
+## list
+
+# display all elements
+
+# a = list(range(1,11))
+# print(a)
+
+# length of items
+
+# a = list(range(1,11))
+# print(len(a))
+
+# types of items
+
+# a = [1,2,3,4, 'sfgd', 'dsgg', 'sdgd', {}, ['asd','asf']]
+# for elem in a :
+#     print(type(elem))
+
+# set
+
+# adding single and multiple elements
+
+# a = set(range(11))
+# print(a)
+# a.add(45)
+# print(a)
+# a.update(range(66))
+# print(a)
+
+# union of 2 sets
+
+# a = set(range(11))
+# b = set(range(5, 21))
+# print(a & b)
+
+# unique to a set
+
+# a = set(range(11))
+# b = set(range(5, 21))
+# print(a ^ b)
+
+# unique to only one
+
+# a = set(range(11))
+# b = set(range(5, 21))
+# print(a - b)
+
+# removing items from a set
+
+# a = set(range(11))
+# print(a)
+# a.remove(0)
+# print(a)
+# a.clear()
+# print(a)
+
+# adding set b to set a
+
+# a = set(range(11))
+# b = set(range(5, 21))
+# a.update(b)
+# print(a)
+
+# list to dictionary
+
+# a = list(range(11))
+# b = list(range(10,21))
+# c = dict(zip(a,b))
+# print(c)
+
+# merging two dictonaries
+
+# a = dict(zip(range(11), range(10, 21)))
+# b = dict(zip(range(20,31), range(30,41)))
+# print(a)
+# a.update(b)
+# print(a)
+
+# initializng dictionary with default values
+
+# a = list(range(11))
+
+# deleting a list of keys
+
+# a = dict(zip(range(11), range(10, 21)))
+# print(a)
+# a.pop(1)
+# print(a)
+# a.clear()
+# print(a)
+
+# checking for the availability of a key
+
+# a = dict(zip(range(11), range(10, 21)))
+# print(21 in a)
